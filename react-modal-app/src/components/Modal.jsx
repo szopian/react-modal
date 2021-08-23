@@ -23,14 +23,18 @@ function Page({ setIsOpen }) {
           <ModalHeader>
             <Heading>Heading</Heading>
           </ModalHeader>
-          <ModalContent>Are you Modal Content?</ModalContent>
+          <ModalContent>Are you sure you want to delete the item?</ModalContent>
+          <ModalActions>
+            <ActionsContainer>
+              <DeleteButton onClick={() => setIsOpen(false)}>
+                Delete
+              </DeleteButton>
+              <CancelButton onClick={() => setIsOpen(false)}>
+                Cancel
+              </CancelButton>
+            </ActionsContainer>
+          </ModalActions>
         </Modal>
-        <ModalActions>
-          <ActionsContainer>
-            <DeleteButton onClick={() => setIsOpen(false)}>Delete</DeleteButton>
-            <CancelButton onClick={() => setIsOpen(false)}>Cancel</CancelButton>
-          </ActionsContainer>
-        </ModalActions>
       </Wrapper>
     </>
   );

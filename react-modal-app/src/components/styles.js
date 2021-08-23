@@ -26,8 +26,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Modal = styled.div`
-  width: 250px;
-  height: 170px;
+  max-width: 400px;
+  min-height: 200px;
   background: white;
   color: white;
   z-index: 10;
@@ -83,10 +83,71 @@ export const ModalContent = styled.p`
   text-align: center;
 `;
 
-export const ModalActions = styled.div``;
+export const ModalActions = styled.div`
+  position: absolute;
+  bottom: 2px;
+  margin-bottom: 10px;
+  width: 100%;
+`;
 
-export const ActionsContainer = styled.div``;
+export const ActionsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
 
-export const DeleteButton = styled.button``;
+export const DeleteButton = styled.button`
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 17px 35px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  border: none;
+  color: #fff;
+  background: #ff3e4e;
+  transition: all 0.25s ease;
 
-export const CancelButton = styled.button``;
+  &&:hover {
+    box-shadow: 0 10px 20px -10px rgba(255, 62, 78, 0.6);
+    transform: translateY(-5px);
+    background: #ff3e4e;
+  }
+`;
+
+export const CancelButton = styled.button`
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 17px 35px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  border: none;
+  color: #2c3e50;
+  background: #fcfcfc;
+  transition: all 0.25s ease;
+
+  &&:hover {
+    box-shadow: none;
+    transform: none;
+    background: whitesmoke;
+  }
+`;
+
+export const PrimaryButton = styled.button`
+  margin: 20px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 17px 35px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  background: #185adb;
+  transition: all 0.25s ease;
+
+  &&:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
+  }
+`;

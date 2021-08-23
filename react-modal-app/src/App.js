@@ -1,11 +1,14 @@
-import { GlobalStyles } from "./components/styles";
-import Page from "./components/Page.jsx";
+import { GlobalStyles, PrimaryButton } from "./components/styles";
+import Modal from "./components/Modal.jsx";
+import React, { useState } from "react";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <GlobalStyles />
-      <Page />
+      <PrimaryButton onClick={() => setIsOpen(true)}>Open Modal</PrimaryButton>
+      {isOpen && <Modal setIsOpen={setIsOpen} />}
     </>
   );
 }
