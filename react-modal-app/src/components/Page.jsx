@@ -1,12 +1,15 @@
 import React from "react";
-import { DarkBG, Wrapper, ButtonX } from "./styles";
+import { DarkBG, Wrapper, ButtonX, Modal, ModalHeader } from "./styles";
 
 function Page() {
   return (
     <>
       <DarkBG />
       <Wrapper>
-        <ButtonX />
+        <Modal>
+          <ButtonX />
+          <ModalHeader />
+        </Modal>
       </Wrapper>
     </>
   );
