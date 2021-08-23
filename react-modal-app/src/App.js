@@ -1,13 +1,12 @@
-import { GlobalStyles, DarkBG } from "./components/styles";
+import { GlobalStyles } from "./components/styles";
+import Page from "./components/Page.jsx";
 
 function App() {
   return (
-    <div>
+    <>
       <GlobalStyles />
-      <DarkBG>
-        <h1>Greg Szopian</h1>
-      </DarkBG>
-    </div>
+      <Page />
+    </>
   );
 }
 
