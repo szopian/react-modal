@@ -16,10 +16,7 @@ export const DarkBG = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  color: #fff;
 `;
-
-export const ButtonX = styled(RiCloseLine)``;
 
 export const Wrapper = styled.div`
   position: fixed;
@@ -45,3 +42,49 @@ export const ModalHeader = styled.div`
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 `;
+
+export const Heading = styled.h5`
+  margin: 0;
+  padding: 10px;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+`;
+
+export const ButtonX = styled(RiCloseLine)`
+  cursor: pointer;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-self: flex-end;
+  margin-top: -7px;
+  margin-right: -7px;
+
+  &&:hover {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    transform: translate(-4px, 4px);
+  }
+`;
+
+export const ModalContent = styled.p`
+  padding: 10px;
+  font-size: 14px;
+  color: #2c3e50;
+  text-align: center;
+`;
+
+export const ModalActions = styled.div``;
+
+export const ActionsContainer = styled.div``;
+
+export const DeleteButton = styled.button``;
