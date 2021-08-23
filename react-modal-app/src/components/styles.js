@@ -88,3 +88,5 @@ export const ModalActions = styled.div``;
 export const ActionsContainer = styled.div``;
 
 export const DeleteButton = styled.button``;
+
+export const CancelButton = styled.button``;

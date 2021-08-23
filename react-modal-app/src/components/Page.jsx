@@ -10,6 +10,7 @@ import {
   ModalActions,
   ActionsContainer,
   DeleteButton,
+  CancelButton,
 } from "./styles";
 
 function Page({ setIsOpen }) {
@@ -27,6 +28,7 @@ function Page({ setIsOpen }) {
         <ModalActions>
           <ActionsContainer>
             <DeleteButton onClick={() => setIsOpen(false)}>Delete</DeleteButton>
+            <CancelButton onClick={() => setIsOpen(false)}>Cancel</CancelButton>
           </ActionsContainer>
         </ModalActions>
       </Wrapper>
