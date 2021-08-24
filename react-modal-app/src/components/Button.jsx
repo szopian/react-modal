@@ -19,13 +19,9 @@ const Btn = styled.button`
   }
 `;
 
-const Button = ({ text, rgbaShadow, bgColor, setIsOpen }) => {
+const Button = ({ text, rgbaShadow, bgColor }) => {
   return (
-    <Btn
-      BtnBgColor={bgColor}
-      BtnShadowColor={rgbaShadow}
-      onClick={() => setIsOpen(false)}
-    >
+    <Btn BtnBgColor={bgColor} BtnShadowColor={rgbaShadow}>
       {text}
     </Btn>
   );
