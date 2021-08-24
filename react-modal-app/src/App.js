@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <Button text="click me" rgbaShadow="24, 90, 219" />
+      <Button text="Open Modal" rgbaShadow="24, 90, 219" bgColor="#185adb" />
       <PrimaryButton onClick={() => setIsOpen(true)}>Open Modal</PrimaryButton>
       {isOpen && <Modal setIsOpen={setIsOpen} />}
     </>

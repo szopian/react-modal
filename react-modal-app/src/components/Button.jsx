@@ -10,7 +10,7 @@ const Btn = styled.button`
   font-size: 0.8rem;
   border: none;
   color: white;
-  background: #185adb;
+  background: ${(props) => props.BtnBgColor};
   transition: all 0.25s ease;
 
   &&:hover {
@@ -19,8 +19,12 @@ const Btn = styled.button`
   }
 `;
 
-const Button = ({ text, rgbaShadow }) => {
-  return <Btn BtnShadowColor={rgbaShadow}>{text}</Btn>;
+const Button = ({ text, rgbaShadow, bgColor }) => {
+  return (
+    <Btn BtnBgColor={bgColor} BtnShadowColor={rgbaShadow}>
+      {text}
+    </Btn>
+  );
 };
 
 export default Button;
