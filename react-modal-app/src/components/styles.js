@@ -8,7 +8,7 @@ export const GlobalStyles = styled.div`
 `;
 
 export const DarkBG = styled.div`
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 153, 153, 0.2);
   width: 100vw;
   height: 100vh;
   z-index: 0;

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+// WORKING ON REUSABLE BUTTON
+
 const Btn = styled.button`
   margin: 20px 10px;
   cursor: pointer;
@@ -19,9 +21,14 @@ const Btn = styled.button`
   }
 `;
 
-const Button = ({ text, rgbaShadow, bgColor }) => {
+const Button = ({ text, rgbaShadow, bgColor, setIsOpen }) => {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log("The link was clicked.");
+  }
+
   return (
-    <Btn BtnBgColor={bgColor} BtnShadowColor={rgbaShadow}>
+    <Btn BtnBgColor={bgColor} BtnShadowColor={rgbaShadow} onClick={handleClick}>
       {text}
     </Btn>
   );
